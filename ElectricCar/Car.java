@@ -4,7 +4,6 @@ public class Car {
 
 private String ownerName;
 private String insuranceNumber;
-
 protected String engineType;
 
     public Car(String ownerName, String insuranceNumber, String engineType) {
