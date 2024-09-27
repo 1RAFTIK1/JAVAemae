@@ -1,10 +1,11 @@
+
 package app;
 
-import vehicle.Car;
-import vehicle.ElectricCar;
-import vehicle.Vehicle;
+import vehicles.Car;
+import vehicles.ElectricCar;
+import vehicles.Vehicle;
 
-public class Main {
+public class TestCar {
     public static void main(String[] args) {
         Vehicle car = new Car("Toyota", "ABC123", "Red", 2020, "John Doe", "1234567890");
         System.out.println("Car Type: " + car.vehicleType());
