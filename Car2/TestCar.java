@@ -1,18 +1,20 @@
+package app;
+
+import vehicles.Car;
+import vehicles.ElectricCar;
+
 public class TestCar {
     public static void main(String[] args) {
-        // Create a Car object
-        Vehicle car = new Car("Toyota Camry", "X123YZ", "Blue", 2020, "John Doe", "INS12345");
-        System.out.println(car);
+        System.out.println("Class Car");
+        Car car = new Car("Mazda", "k391jk134", "Black", "2009", "Vladimir",
+                "830527694380", "DVS", "Coupe");
+        System.out.println(car.toString() + '\n');
+        car.tooString();
 
-        // Create an ElectricCar object
-        Vehicle electricCar = new ElectricCar("Tesla Model S", "E001XYZ", "Red", 2021, "Jane Smith", "INS67890", 100);
-        System.out.println(electricCar);
-
-        // Use polymorphism to work with objects through a base class reference
-        Vehicle[] vehicles = {car, electricCar};
-        for (Vehicle vehicle : vehicles) {
-            System.out.println("Vehicle Type: " + vehicle.vehicleType());
-            System.out.println(vehicle);
-        }
+        System.out.println("Class ElectricCar");
+        ElectricCar electricCar = new ElectricCar("Moskvich", "j000ls134", "White", "2024",
+                "Alexey", "02937395840", "DVS", "Sedan", "34");
+        System.out.println(electricCar.toString() + '\n');
+        electricCar.tooString();
     }
 }
