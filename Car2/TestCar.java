@@ -1,20 +1,22 @@
 package app;
 
-import vehicles.Car;
-import vehicles.ElectricCar;
+import vehicle.Car;
+import vehicle.ElectricCar;
+import vehicle.Vehicle;
 
-public class TestCar {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Class Car");
-        Car car = new Car("Mazda", "k391jk134", "Black", "2009", "Vladimir",
-                "830527694380", "DVS", "Coupe");
-        System.out.println(car.toString() + '\n');
-        car.tooString();
+        Vehicle car = new Car("Toyota", "ABC123", "Red", 2020, "John Doe", "1234567890");
+        System.out.println("Car Type: " + car.vehicleType());
+        System.out.println("Car Owner: " + car.getOwnerName());
+        System.out.println("Car Insurance Number: " + car.getInsuranceNumber());
+        System.out.println("Car Engine Type: " + car.getEngineType());
 
-        System.out.println("Class ElectricCar");
-        ElectricCar electricCar = new ElectricCar("Moskvich", "j000ls134", "White", "2024",
-                "Alexey", "02937395840", "DVS", "Sedan", "34");
-        System.out.println(electricCar.toString() + '\n');
-        electricCar.tooString();
+        Vehicle electricCar = new ElectricCar("Tesla", "DEF456", "Blue", 2022, "Jane Smith", "0987654321", 82);
+        System.out.println("Electric Car Type: " + electricCar.vehicleType());
+        System.out.println("Electric Car Owner: " + electricCar.getOwnerName());
+        System.out.println("Electric Car Insurance Number: " + electricCar.getInsuranceNumber());
+        System.out.println("Electric Car Engine Type: " + electricCar.getEngineType());
+        System.out.println("Electric Car Battery Capacity: " + ((ElectricCar) electricCar).getBatteryCapacity() + " kWh");
     }
 }
