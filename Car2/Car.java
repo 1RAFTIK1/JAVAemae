@@ -5,7 +5,6 @@ public class Car extends Vehicle {
         super(model, license, color, year, ownerName, insuranceNumber, "Gas");
     }
 
-    @Override
     public String vehicleType() {
         return "Car";
     }
