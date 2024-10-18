@@ -1,0 +1,27 @@
+package bikeproject;
+
+public class Bike implements BikeParts {
+   private String handleBars;
+   private String frame;
+   private String tyres;
+   private String seatType;
+   private int numGears;
+   private final String make;
+
+   public Bike() {
+      this.make = "Oracle Cycles";
+   }
+
+   public Bike(String var1, String var2, String var3, String var4, int var5) {
+      this.handleBars = var1;
+      this.frame = var2;
+      this.tyres = var3;
+      this.seatType = var4;
+      this.numGears = var5;
+      this.make = "Oracle Cycles";
+   }
+
+   public void printDescription() {
+      System.out.println("\n" + this.make + "\nThis bike has " + this.handleBars + " handlebars on a " + this.frame + " frame with " + this.numGears + " gears.\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.");
+   }
+}
