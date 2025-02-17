@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         Car_1 uazic_0 = new Car_1();
-        Car_1 uazic_1 = new Car_1("uaz-452", "yes", "white", 2026);
-        Car_1 uazic_2 = new Car_1("uaz-469", "black");
+        Car_1 uazic_1 = new Car_1("AUDI RS6", "yes", "white", 2026);
+        Car_1 uazic_2 = new Car_1("AUDI RS5", "black");
 
         To_String(uazic_1);
 
